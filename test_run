@@ -1,0 +1,43 @@
+class satellite:
+    def __init__(self, name, mass, power):
+        self.name = name
+        self.mass = 100
+        self.power = 50
+        self.point_acc = 1.5
+        self.subsystems = ['power','fsw','thermal','gnc']
+
+    class subsystem:
+        def __init__(self, name):
+            self.name
+            self.mass_req
+            self.power_req
+
+    class power(subsystem):
+        def size():
+            pass
+
+    class gnc(subsystem):
+        def size():
+            pass
+
+    class thermal(subsystem):
+        def size():
+            pass
+
+    def link_systems(self,subsystem_links):
+        pass
+
+    def size_mass(self,):
+        for subsystem in self.subsystems:
+            self.mass += subsystem.size()
+
+def iterate_architectures(max_num_of_sc,max_cost,max_complex):
+    satellites = [i for in range(0,max_num_of_sc)]
+    for sat_index in satellites:
+        satellites[sat_index] = satellite('sat'+str(sat_index),sat_masses[sat_index],sat_powers[sat_index],sat_pointing[sat_index])
+        for sat in satellites:
+            satellites[sat].subsystem
+
+satellite_1 = satellite(500, 40)
+
+satellite_1.power = 5
